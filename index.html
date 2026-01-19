@@ -94,7 +94,7 @@ body{
   gap:22px;
 }
 
-/* ===== SERVICE CARD AS BUTTON ===== */
+/* ===== SERVICE CARD ===== */
 .service-card{
   background:#fff;
   border-radius:14px;
@@ -105,7 +105,6 @@ body{
   text-decoration:none;
   color:inherit;
   transition:all 0.3s ease;
-  cursor:pointer;
 }
 
 .service-card:hover{
@@ -139,19 +138,50 @@ body{
   font-weight:600;
 }
 
-/* ===== CONTACT ===== */
+/* ===== CONTACT WITH LOGOS ===== */
 .contact{
   background:#f1f6ff;
   padding:40px 20px;
+}
+
+.contact-inner{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+/* LOGO CONTAINERS */
+.logo-left,
+.logo-right{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* FORCE SAME VISUAL SIZE */
+.logo-left img,
+.logo-right img{
+  height:60px;          /* SAME HEIGHT */
+  max-width:180px;     /* PREVENT OVERSIZE */
+  width:auto;
+  object-fit:contain;
+}
+
+/* CENTER CONTENT */
+.contact-center{
   text-align:center;
+  flex:1;
 }
 
-.contact h2{
+.contact-center h2{
   color:#0a4fb3;
-  margin-bottom:10px;
+  margin-bottom:12px;
 }
 
-.contact a{
+.contact-center a{
   display:inline-block;
   background:#0a4fb3;
   color:#fff;
@@ -159,6 +189,30 @@ body{
   border-radius:30px;
   font-size:18px;
   text-decoration:none;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .contact-inner{
+    flex-direction:column;
+  }
+
+  .logo-left img,
+  .logo-right img{
+    height:50px;
+    max-width:150px;
+  }
+}
+/* MAKE EASILYWORK LOGO BIGGER */
+.logo-left img{
+  height:95px;        /* increase here */
+  max-width:220px;
+}
+
+/* KEEP RELITRADE NORMAL */
+.logo-right img{
+  height:60px;
+  max-width:180px;
 }
 
 /* ===== FOOTER ===== */
@@ -204,87 +258,16 @@ footer{
 <!-- SERVICES -->
 <section class="services-section">
   <div class="services-grid">
-
-    <a href="#" class="service-card">
-      <div class="service-icon">📊</div>
-      <div>
-        <h3>Tax & Accounting Services</h3>
-        <p>Income Tax, GST, Bookkeeping & Audits</p>
-      </div>
-    </a>
-
-    <a href="#" class="service-card">
-      <div class="service-icon">📝</div>
-      <div>
-        <h3>Registrations</h3>
-        <p>GST, MSME, Startup & Other Registrations</p>
-      </div>
-    </a>
-
-    <a href="#" class="service-card">
-      <div class="service-icon">⚖️</div>
-      <div>
-        <h3>Legal Drafting</h3>
-        <p>Agreements, Contracts & Documentation</p>
-      </div>
-    </a>
-
-    <a href="#" class="service-card">
-      <div class="service-icon">🏢</div>
-      <div>
-        <h3>ROC Compliance</h3>
-        <p>Company & LLP Filings & Governance</p>
-      </div>
-    </a>
-
-    <a href="#" class="service-card">
-      <div class="service-icon">🏗️</div>
-      <div>
-        <h3>Starting a New Business</h3>
-        <p>Incorporation & Setup Support</p>
-      </div>
-    </a>
-
-    <a href="#" class="service-card">
-      <div class="service-icon">💼</div>
-      <div>
-        <h3>Loan Services</h3>
-        <p>Business Loans, Home Loans & Working Capital</p>
-      </div>
-    </a>
-
-    <a href="#" class="service-card">
-      <div class="service-icon">🔐</div>
-      <div>
-        <h3>Class 3 Digital Signature</h3>
-        <p>Organisation DSCs & E-Tendering</p>
-      </div>
-    </a>
-
-    <a href="#" class="service-card">
-      <div class="service-icon">🆔</div>
-      <div>
-        <h3>National Services</h3>
-        <p>PAN, Aadhaar & Govt. Services</p>
-      </div>
-    </a>
-
-    <a href="#" class="service-card">
-      <div class="service-icon">🌐</div>
-      <div>
-        <h3>Website Services</h3>
-        <p>Website Development & Digital Solutions</p>
-      </div>
-    </a>
-
-    <a href="#" class="service-card">
-      <div class="service-icon">™️</div>
-      <div>
-        <h3>Trademark Services</h3>
-        <p>Registrations & Modifications</p>
-      </div>
-    </a>
-
+    <a href="#" class="service-card"><div class="service-icon">📊</div><div><h3>Tax & Accounting Services</h3><p>Income Tax, GST, Bookkeeping & Audits</p></div></a>
+    <a href="#" class="service-card"><div class="service-icon">📝</div><div><h3>Registrations</h3><p>GST, MSME, Startup & Other Registrations</p></div></a>
+    <a href="#" class="service-card"><div class="service-icon">⚖️</div><div><h3>Legal Drafting</h3><p>Agreements, Contracts & Documentation</p></div></a>
+    <a href="#" class="service-card"><div class="service-icon">🏢</div><div><h3>ROC Compliance</h3><p>Company & LLP Filings & Governance</p></div></a>
+    <a href="#" class="service-card"><div class="service-icon">🏗️</div><div><h3>Starting a New Business</h3><p>Incorporation & Setup Support</p></div></a>
+    <a href="#" class="service-card"><div class="service-icon">💼</div><div><h3>Loan Services</h3><p>Business Loans, Home Loans & Working Capital</p></div></a>
+    <a href="#" class="service-card"><div class="service-icon">🔐</div><div><h3>Class 3 Digital Signature</h3><p>Organisation DSCs & E-Tendering</p></div></a>
+    <a href="#" class="service-card"><div class="service-icon">🆔</div><div><h3>National Services</h3><p>PAN, Aadhaar & Govt. Services</p></div></a>
+    <a href="#" class="service-card"><div class="service-icon">🌐</div><div><h3>Website Services</h3><p>Website Development & Digital Solutions</p></div></a>
+    <a href="#" class="service-card"><div class="service-icon">™️</div><div><h3>Trademark Services</h3><p>Registrations & Modifications</p></div></a>
   </div>
 </section>
 
@@ -295,11 +278,22 @@ footer{
 
 <!-- CONTACT -->
 <section class="contact">
-  <h2>Reliable | Timely | Cost-Effective Solutions</h2>
-  <a href="tel:+918980412000">📞 +91-8980412000</a>
+  <div class="contact-inner">
+    <div class="logo-left">
+      <img src="images/left-logo.png" alt="Easilywork Logo">
+    </div>
+
+    <div class="contact-center">
+      <h2>Reliable | Timely | Cost-Effective Solutions</h2>
+      <a href="tel:+918980412000">📞 +91-8980412000</a>
+    </div>
+
+    <div class="logo-right">
+      <img src="images/right-logo.svg" alt="Relitrade Logo">
+    </div>
+  </div>
 </section>
 
-<!-- FOOTER -->
 
 
 </body>
