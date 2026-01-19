@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Easilywork.in</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI", Arial, sans-serif;
+}
+
+body{
+  background:#eef3fb;
+  color:#333;
+}
+
+/* ===== HERO ===== */
+.hero{
+  background:linear-gradient(135deg,#0a4fb3,#2e8de6);
+  color:#fff;
+  padding:60px 20px;
+}
+
+.hero-inner{
+  max-width:1200px;
+  margin:auto;
+}
+
+.hero h1{
+  font-size:42px;
+  font-weight:700;
+}
+
+.hero h1 span{
+  color:#ffcc33;
+}
+
+.hero-line{
+  width:120px;
+  height:4px;
+  background:#ffffff;
+  margin:14px 0 10px;
+  border-radius:2px;
+}
+
+.hero p{
+  font-size:18px;
+}
+
+/* ===== INTRO ===== */
+.intro{
+  background:#fff;
+  max-width:1100px;
+  margin:-40px auto 40px;
+  padding:30px;
+  border-radius:14px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.1);
+}
+
+.intro p{
+  margin-bottom:12px;
+  line-height:1.6;
+}
+
+/* ===== SERVICES TITLE ===== */
+.services-title{
+  text-align:center;
+  margin:40px 0 30px;
+}
+
+.services-title span{
+  background:#0a4fb3;
+  color:#fff;
+  padding:10px 28px;
+  border-radius:30px;
+  font-size:20px;
+  font-weight:600;
+}
+
+/* ===== SERVICES GRID ===== */
+.services-section{
+  padding:20px 20px 60px;
+}
+
+.services-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+}
+
+/* ===== SERVICE CARD AS BUTTON ===== */
+.service-card{
+  background:#fff;
+  border-radius:14px;
+  padding:24px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  display:flex;
+  gap:15px;
+  text-decoration:none;
+  color:inherit;
+  transition:all 0.3s ease;
+  cursor:pointer;
+}
+
+.service-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 40px rgba(10,79,179,0.25);
+  border:1px solid #0a4fb3;
+}
+
+.service-icon{
+  font-size:36px;
+}
+
+.service-card h3{
+  color:#0a4fb3;
+  font-size:16px;
+  margin-bottom:4px;
+}
+
+.service-card p{
+  font-size:14px;
+  color:#555;
+}
+
+/* ===== ORANGE STRIP ===== */
+.orange-strip{
+  background:#f7931e;
+  color:#fff;
+  text-align:center;
+  padding:16px;
+  font-size:18px;
+  font-weight:600;
+}
+
+/* ===== CONTACT ===== */
+.contact{
+  background:#f1f6ff;
+  padding:40px 20px;
+  text-align:center;
+}
+
+.contact h2{
+  color:#0a4fb3;
+  margin-bottom:10px;
+}
+
+.contact a{
+  display:inline-block;
+  background:#0a4fb3;
+  color:#fff;
+  padding:14px 30px;
+  border-radius:30px;
+  font-size:18px;
+  text-decoration:none;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#ffffff;
+  padding:20px;
+  border-top:1px solid #dde5f2;
+  text-align:center;
+  font-size:18px;
+  color:#0a4fb3;
+  font-weight:600;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Introducing <span>Easilywork.in</span></h1>
+    <div class="hero-line"></div>
+    <p>A Professional Services Vertical</p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+  <p><strong>Dear Client,</strong></p>
+  <p>Greetings from Relitrade Stock Broking Private Limited.</p>
+  <p>
+    We are pleased to introduce our new venture <strong>Easilywork.in</strong>,
+    a dedicated professional services vertical designed to support individuals,
+    startups, and businesses with end-to-end financial, legal, and compliance solutions.
+  </p>
+</section>
+
+<!-- SERVICES TITLE -->
+<div class="services-title">
+  <span>Our Services Include</span>
+</div>
+
+<!-- SERVICES -->
+<section class="services-section">
+  <div class="services-grid">
+
+    <a href="#" class="service-card">
+      <div class="service-icon">📊</div>
+      <div>
+        <h3>Tax & Accounting Services</h3>
+        <p>Income Tax, GST, Bookkeeping & Audits</p>
+      </div>
+    </a>
+
+    <a href="#" class="service-card">
+      <div class="service-icon">📝</div>
+      <div>
+        <h3>Registrations</h3>
+        <p>GST, MSME, Startup & Other Registrations</p>
+      </div>
+    </a>
+
+    <a href="#" class="service-card">
+      <div class="service-icon">⚖️</div>
+      <div>
+        <h3>Legal Drafting</h3>
+        <p>Agreements, Contracts & Documentation</p>
+      </div>
+    </a>
+
+    <a href="#" class="service-card">
+      <div class="service-icon">🏢</div>
+      <div>
+        <h3>ROC Compliance</h3>
+        <p>Company & LLP Filings & Governance</p>
+      </div>
+    </a>
+
+    <a href="#" class="service-card">
+      <div class="service-icon">🏗️</div>
+      <div>
+        <h3>Starting a New Business</h3>
+        <p>Incorporation & Setup Support</p>
+      </div>
+    </a>
+
+    <a href="#" class="service-card">
+      <div class="service-icon">💼</div>
+      <div>
+        <h3>Loan Services</h3>
+        <p>Business Loans, Home Loans & Working Capital</p>
+      </div>
+    </a>
+
+    <a href="#" class="service-card">
+      <div class="service-icon">🔐</div>
+      <div>
+        <h3>Class 3 Digital Signature</h3>
+        <p>Organisation DSCs & E-Tendering</p>
+      </div>
+    </a>
+
+    <a href="#" class="service-card">
+      <div class="service-icon">🆔</div>
+      <div>
+        <h3>National Services</h3>
+        <p>PAN, Aadhaar & Govt. Services</p>
+      </div>
+    </a>
+
+    <a href="#" class="service-card">
+      <div class="service-icon">🌐</div>
+      <div>
+        <h3>Website Services</h3>
+        <p>Website Development & Digital Solutions</p>
+      </div>
+    </a>
+
+    <a href="#" class="service-card">
+      <div class="service-icon">™️</div>
+      <div>
+        <h3>Trademark Services</h3>
+        <p>Registrations & Modifications</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="orange-strip">
+  All Your Business Needs Under One Roof!
+</div>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Reliable | Timely | Cost-Effective Solutions</h2>
+  <a href="tel:+918980412000">📞 +91-8980412000</a>
+</section>
+
+<!-- FOOTER -->
+
+
+</body>
+</html>
