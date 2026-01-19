@@ -138,7 +138,7 @@ body{
   font-weight:600;
 }
 
-/* ===== CONTACT WITH LOGOS ===== */
+/* ===== CONTACT ===== */
 .contact{
   background:#f1f6ff;
   padding:40px 20px;
@@ -161,11 +161,19 @@ body{
   justify-content:center;
 }
 
-/* FORCE SAME VISUAL SIZE */
-.logo-left img,
+/* 🔵 EASILYWORK LOGO (PRIMARY) */
+.logo-left img{
+  height:95px;          /* MAIN SIZE */
+  max-width:230px;
+  width:auto;
+  object-fit:contain;
+}
+
+/* 🔵 RELITRADE LOGO (MATCHED VISUAL WEIGHT) */
+/* 🔵 RELITRADE LOGO – BIGGER */
 .logo-right img{
-  height:60px;          /* SAME HEIGHT */
-  max-width:180px;     /* PREVENT OVERSIZE */
+  height: 100px;        /* increase size */
+  max-width:260px;   /* allow more width */
   width:auto;
   object-fit:contain;
 }
@@ -191,28 +199,21 @@ body{
   text-decoration:none;
 }
 
-/* MOBILE */
+/* ===== MOBILE ===== */
 @media(max-width:768px){
   .contact-inner{
     flex-direction:column;
   }
 
-  .logo-left img,
-  .logo-right img{
-    height:50px;
-    max-width:150px;
+  .logo-left img{
+    height:70px;
+    max-width:180px;
   }
-}
-/* MAKE EASILYWORK LOGO BIGGER */
-.logo-left img{
-  height:95px;        /* increase here */
-  max-width:220px;
-}
 
-/* KEEP RELITRADE NORMAL */
-.logo-right img{
-  height:60px;
-  max-width:180px;
+  .logo-right img{
+    height:60px;
+    max-width:170px;
+  }
 }
 
 /* ===== FOOTER ===== */
@@ -226,6 +227,7 @@ footer{
   font-weight:600;
 }
 </style>
+
 </head>
 
 <body>
